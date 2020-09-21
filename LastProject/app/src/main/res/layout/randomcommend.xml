@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/rnadomFood_Sub1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rnadomFood_Main"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="랜덤 추천 음식 1"
+        android:textSize="40sp"
+        android:textColor="#808080"
+        />
+
+    <TextView
+        android:id="@+id/rnadomFood_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="랜덤 추천 음식2"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+
+    <TextView
+        android:id="@+id/rnadomFood_Sub2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rnadomFood_Main"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="랜덤 추천 음식 3"
+        android:textSize="40sp"
+        android:textColor="#808080"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rnadomFood_Main"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rnadomFood_Main"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rnadomFood_Sub2"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rnadomFood_Sub1"
+        />
+    <Button
+        android:id="@+id/random_StartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시작"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#8080"/>
+
+</android.support.constraint.ConstraintLayout>
